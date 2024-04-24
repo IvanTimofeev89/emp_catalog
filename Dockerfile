@@ -37,6 +37,8 @@ RUN poetry install
 
 EXPOSE 8000
 
+RUN sed -i 's/\r$//' $app/run.sh  && \
+        chmod +x $app/run.sh
 # run script
 RUN chmod +x run.sh
 
