@@ -33,6 +33,10 @@ RUN python -m venv $VIRTUAL_ENV \
 FROM development as production
 WORKDIR /app
 COPY . .
+
+# Remove carriage return characters from run.sh
+RUN sed -i 's/\r//' run.sh
+
 RUN poetry install
 
 EXPOSE 8000
@@ -41,7 +45,5 @@ EXPOSE 8000
 COPY ./run.sh /
 
 RUN chmod +x /run.sh
-
-RUN dos2unix /run.sh
 
 ENTRYPOINT ["bash", "run.sh"]

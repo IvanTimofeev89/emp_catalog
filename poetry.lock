@@ -35,16 +35,6 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
-name = "dos2unix"
-version = "1"
-description = "convert dos linefeeds (crlf) to unix (lf)"
-optional = false
-python-versions = "*"
-files = [
-    {file = "dos2unix-1.zip", hash = "sha256:0b57b608d04b2f8369cbc75fccded21916bfa75a181c65e3cd78ab6d5d7d76a1"},
-]
-
-[[package]]
 name = "faker"
 version = "24.11.0"
 description = "Faker is a Python package that generates fake data for you."
@@ -212,4 +202,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f3d087f12b8b4f9a454f6333037f7358bf85a2720097e87f5f0de64cca06687f"
+content-hash = "69ffcfac058784e5a40f8ef4f46c2ae40073cbcd1d8c4cabebd37789aa0be98a"
