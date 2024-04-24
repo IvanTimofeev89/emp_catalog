@@ -1,0 +1,16 @@
+{% extends "employees_catalog/base.html" %}
+{% block title %} Успешный вход в систему {% endblock %}
+{% block content %}
+<h2>Выберите раздел сайта</h2>
+
+<div class="buttom-container">
+
+    <form class="form-group" action="{% url 'emp_catalog' %}">
+        <button class="btn btn-outline-primary" type="submit">Дерево персонала</button>
+    </form>
+    <form class="form-group" action="{% url 'catalog_detail' %}">
+        <button class="btn btn-outline-primary" type="submit">Детальная информация о сотрудниках</button>
+    </form>
+
+</div>
+{% endblock %}
