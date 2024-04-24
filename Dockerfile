@@ -40,4 +40,4 @@ EXPOSE 8000
 # run script
 RUN chmod +x run.sh
 
-ENTRYPOINT ["run.sh"]
+ENTRYPOINT ["./run.sh"]
