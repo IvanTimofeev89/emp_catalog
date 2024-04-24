@@ -38,6 +38,6 @@ RUN poetry install
 EXPOSE 8000
 
 # run script
-RUN chmod +x /app/run.sh
+RUN chmod +x run.sh
 
-ENTRYPOINT ["/app/run.sh"]
+ENTRYPOINT ["./run.sh"]
