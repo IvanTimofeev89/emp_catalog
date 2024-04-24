@@ -43,3 +43,4 @@ RUN sed -i 's/\r$//' $app/run.sh  && \
 RUN chmod +x run.sh
 
 ENTRYPOINT ["./run.sh"]
+

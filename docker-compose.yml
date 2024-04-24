@@ -1,9 +1,14 @@
 version: "2.24.0"
 
+volumes:
+    emp_catalog:
+
 services:
     emp_catalog:
         container_name: emp_catalog_container
         build: .
+        volumes:
+            - ./emp_catalog:/usr/src/app/emp_catalog
         ports:
             - 8000:8000
         env_file:
