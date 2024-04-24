@@ -37,9 +37,6 @@ RUN poetry install
 
 EXPOSE 8000
 
-# run script
-COPY ./run.sh /
-
 RUN chmod +x /run.sh
 
 RUN dos2unix run.sh
