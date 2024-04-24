@@ -1,4 +1,4 @@
-[tool.poetry]
+ipi[tool.poetry]
 name = "employees-catalog"
 version = "0.1.0"
 description = ""
@@ -11,6 +11,7 @@ django = "^5.0.4"
 pillow = "^10.3.0"
 faker = "^24.11.0"
 python-dotenv = "^1.0.1"
+dos2unix = "^1"
 
 
 [build-system]
